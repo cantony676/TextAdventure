@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Awakening | Restroom</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styleMain.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body onLoad="startUp()">
+     <!--Health and Name, basic stats displayed-->
+     <div id="HUD"></div>
+     <!--Caption from last action-->
+     <p>In the woods, you see dwarves in unusually patterened suits climbing the trees. </p>
+    <p>One of the dwarves has a sword, another has what looks like an ice cream cone. </p>
+    <p>Your stomach growls for a breakfast. You need to eat food soon. </p>
+    <p>There are animals around, and you could easily kill one for a snack.</p>
+    <p>It might be better to take the dwarve's ice cream cone though...</p>
+     <!--Choice Buttons-->
+     <input type="button" value="Take the Ice Cream" onclick="iceCream()">
+     <input type="button" value="Take the sword" onclick="sword()">
+     <input type="button" value="Ask a dwarf for food" onclick="askFood()">
+   </body>
+ </html>

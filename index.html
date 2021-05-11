@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Awakening | Setup</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <script>
+    function getInfo(){
+      var x = document.getElementById('field1').value;
+      window.localStorage.setItem('userName', x);
+      x = document.getElementById('field2').value;
+      window.localStorage.setItem('userAge', x);
+      var y = 100;
+      window.localStorage.setItem('userHealth', y);
+      var name = window.localStorage.getItem('userName');
+      if(x<=1){
+        alert("Hey there little buddy...you're not old enough to use a computer. Where are your parents?");
+      }
+      else{
+        alert("Hello "+name+ ". Welcome to the Awakening. Click the button to wake up!");
+        window.location.href = "wake.html";
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="styleMain.css">
+  </head>
+  <body>
+    <h1>Welcome to "The Awakening" a text adventure where you're just trying to survive the morning.</h1>
+    <p>Enter some information, then hit the button to get started!</p>
+    <table>
+      <tr>
+        <td><p>Name: </p></td><td><input type="text" id="field1"></td>
+      </tr>
+      <tr>
+        <td><p>Age: </p></td><td><input type="text" id = "field2"></td>
+      </tr>
+      <tr>
+        <td><p>Click to get started! </p></td><td><input type="button" id = "start" onclick="getInfo()"></td>
+      </tr>
+    </table>
+  </body>
+</html>

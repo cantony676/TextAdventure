@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Awakening | Level 1</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styleMain.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body onLoad="startUp()">
+     <!--Health and Name, basic stats displayed-->
+     <div id="HUD"></div>
+     <!--Caption from last action-->
+    <p>You wake up in a waterbed and squirm a little. Pulling up the covers, you try to ignore your ringing alarm for a second by folding your pillow over your ears.</p>
+    <!--Question-->
+    <p>Would you like to get out of bed or slap your alarm and sleep in?</p>
+    <!--Choice buttons-->
+    <input type="button" value="Get out of bed" onclick="getUp()">
+    <input type="button" value="Go back to bed" onclick="alarmOff()">
+    <!--Inject with next dilemma-->
+    <div id="result">
+    </div>
+  </body>
+</html>

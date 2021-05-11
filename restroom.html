@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Awakening | Restroom</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styleMain.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body onLoad="startUp()">
+     <!--Health and Name, basic stats displayed-->
+     <div id="HUD"></div>
+     <!--Caption from last action-->
+    <p>You enter the restroom and fix any ailments. You see the toothbrush and toothpaste arguing.</p>
+    <!--Question-->
+    <p>Who do you want to support?</p>
+    <!--Choice buttons-->
+    <input type="button" value="Support the paste" onclick="paste()">
+    <input type="button" value="Support the brush" onclick="brush()">
+    <input type="button" value="Get them to comprimise" onclick="brushandpaste()">
+    <!--Inject with next dilemma-->
+    <div id="result">
+      </div>
+   </body>
+ </html>
