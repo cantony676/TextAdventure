@@ -55,7 +55,7 @@ function brushandpaste(){
   newBrushing();
 }
 function newBrushing(){
-  window.localStorage.setUserItem('lastPage',"toothstyff.html");
+  window.localStorage.setUserItem('lastPage',"toothstuff.html");
   window.location.href="toothstuff.html";
 }
 function riddle1(){
@@ -143,4 +143,9 @@ function leave(){
 }
 function stay(){
   window.location.href="dwarfLife.html";
+}
+function corpse(){
+  health-=10
+  alert("not exactly the greatest hygiene, so you lost a bit of health. You go kitchen now. ");
+  window.location.href="kitchen1.html";
 }
