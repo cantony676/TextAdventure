@@ -1,6 +1,9 @@
 p{
   margin:auto;
-  font-size: "30px";
+  font-size: 30px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif
+}
 }
 body{
   background-color: #06D6A0;
